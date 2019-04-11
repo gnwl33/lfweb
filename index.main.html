@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hackathon</title>
+	<meta name="description" content="test"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="facss.css">
+	<link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+	<!-- amCharts javascript sources -->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+	<!-- my javascript code -->
+<body>
+<div id="main">
+<header>
+	<!--header-->
+	
+	<div class="header"><img src="logofa.png" alt="logo" id="logo" height="130" width="130" style="float: left;" />
+	<h2 id="mymenu"><font color="#8fa879">FOUND</font><b><font color="#f49681">AROUND</font></b></h2></div>
+
+  <div class="navmenu" id="nav">
+    <h3 style="float: right;"><button type="button" class="btn btn-light" id="Home" onclick="location.href='index.main.html';">HOME</h3></button>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="Login" onclick="location.href='logintest.html';">SIGNUP/LOGIN</button></h3>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="LostItems1" onclick="location.href='lostpage.html';">FIND LOST ITEMS</button></h3>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="FoundItems1" onclick="location.href='foundpage.html';">FIND FOUND ITEMS</button></h3>
+  </div>
+
+</header>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
+
+<div class="container1">
+<div class="imgbox">
+    <img class="center-fit" src='foundaroundwrectangle.jpg'>
+    <div class="center">EMORY'S PRIMARY LOST & FOUND PLATFORM</div>
+    <div class="container">
+  		<tr>
+  			<th id="Lost"><div class="bottom-left"><button type="button" class="btn btn-link" id="LostPage" onclick="location.href='lostpage.html';"><center><b>LOST AN ITEM</b></center></button></th></div>
+  			<th id="Found"><div class="bottom-right"><button type="button" class="btn btn-link" id="FoundPage" onclick="location.href='foundpage.html';"><center><b>FOUND AN ITEM</b></center></button></th></div>
+  		</tr>
+  	</div>
+</div>
+</div>
+</body>
+<!-- starts here--->
+
+
+<!--
+	<center><button type="button" class="btn btn-outline-secondary" id="LostItem">LOST AN ITEM</button>
+	<button type="button" class="btn btn-outline-secondary" id="FoundItem">FOUND AN ITEM</button></center>
+
+
+-->
+	
+
+
+
+

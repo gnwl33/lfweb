@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hackathon</title>
+	<meta name="description" content="test"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="facss.css">
+	<link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+	<!-- amCharts javascript sources -->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+	<!-- my javascript code -->
+<body>
+<div id="main">
+<header>
+	<!--header-->
+	
+	<div class="header"><img src="logofa.png" alt="logo" id="logo" height="130" width="130" style="float: left;" />
+	<h2 id="mymenu"><font color="#8fa879">FOUND</font><b><font color="#f49681">AROUND</font></b></h2></div>
+
+  <div class="navmenu" id="nav">
+    <h3 style="float: right;"><button type="button" class="btn btn-light" id="Home" onclick="location.href='index.main.html';">HOME</h3></button>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="Login" onclick="location.href='logintest.html';">SIGNUP/LOGIN</button></h3>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="LostItems1" onclick="location.href='lostpage.html';">FIND LOST ITEMS</button></h3>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="FoundItems1" onclick="location.href='foundpage.html';">FIND FOUND ITEMS</button></h3>
+  </div>
+
+</header>
+<!--
+<div class="alert alert-success alert-dismissible fade show" id="signupalert" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+  <h4 class="alert-heading">Well done!</h4>
+  <p>Thank you for registering. Please check your email for further instructions on how to activate your account.</p>
+  <hr>
+</div><-->
+<div class="loginhelp" id="loginhelp">Already registered? Log in 
+  <td id="userlist"><center><button type="button" class="btn btn-link" id="loginbutton" data-toggle="modal" data-target="#LoginPop">here</button></td></center></td></div>
+<!--Modal Starts Here-->
+<div class="modal fade" id="LoginPop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleLogIn">Log In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+        </div>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal Ends Here-->
+<form id="signupform">
+  <div class="form-group">
+    <label for="InputEmail1">Email address</label>
+    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">Please use your school email when registering.</small>
+  </div>
+  <div class="form-group">
+    <label for="InputPassword1">Password</label>
+    <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+  </div>
+   <div class="form-group">
+    <label for="StudentID1">Student ID</label>
+    <input type="studentid" class="form-control" id="InputID" placeholder="#000000">
+  </div>
+  <button type="submit" class="btn btn-primary" id="SubmitSignup">Submit</button>
+</div>
+</form>
+
+</div>
+
+</body>

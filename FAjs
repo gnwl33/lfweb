@@ -1,0 +1,15 @@
+
+
+$(document).ready(function(){
+
+$(".Home").on('click', function(){
+	location.href="/";
+});
+
+$(".Login").on('click', function(){
+	location.href="loginpage.html";
+});
+
+
+
+}

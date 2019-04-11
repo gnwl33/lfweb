@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hackathon</title>
+  <meta name="description" content="test"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="facss.css">
+  <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+  <!-- amCharts javascript sources -->
+  <script type="text/javascript" src="jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+  <!-- my javascript code -->
+<body>
+<div id="main">
+<header>
+  <!--header-->
+  
+  <div class="header"><img src="logofa.png" alt="logo" id="logo" height="130" width="130" style="float: left;" />
+  <h2 id="mymenu"><font color="#8fa879">FOUND</font><b><font color="#f49681">AROUND</font></b></h2></div>
+
+  <div class="navmenu" id="nav">
+    <h3 style="float: right;"><button type="button" class="btn btn-light" id="Home" onclick="location.href='index.main.html';">HOME</h3></button>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="Login" onclick="location.href='logintest.html';">SIGNUP/LOGIN</button></h3>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="LostItems1" onclick="location.href='lostpage.html';">FIND LOST ITEMS</button></h3>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="FoundItems1" onclick="location.href='foundpage.html';">FIND FOUND ITEMS</button></h3>
+  </div>
+
+</header>
+
+<!--Search form -->
+<form class="form-inline" id="searchfound">
+  <i class="fa fa-search" aria-hidden="true"></i>
+  <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+</form>
+
+<div class="container">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" id="reportfoundmodal">
+  REPORT FOUND ITEM
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ReportFoundTitle">Report a Found Item</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form id="reportfoundform">
+            <div class="form-group">
+              <label for="InputFoundItem">Found Item</label>
+                <input type="founditem" class="form-control" id="InputFoundItem" aria-describedby="foundHelp" placeholder="Enter Item Name">
+            </div>
+            <div class="form-group">
+              <label>Category</label>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="Category1Button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Category
+                </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="InputDateFound">Date Found</label>
+              <input type="datefound" class="form-control" id="InputDateFound" placeholder="MM/DD/YY">
+            </div>
+           <div class="form-group">
+            <label for="InputDescription">Description</label>
+            <input type="description1" class="form-control" id="InputDes" placeholder="ie. Silver Macbook Air 2014">
+          </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<table class="table table-bordered" id="foundcategory">
+  <thead>
+    <tr>
+      <th scope="col" id="founditem">Found Item</th>
+      <th scope="col" id="fcategory">Category</th>
+      <th scope="col" id="founddate">Lost Date</th>
+      <th scope="col" id="fdescription">Description</th>
+      <th scope="col" id="userfound">User</th>
+      <th scope="col" id="foundlocation">Location Found</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" id="flisting">Emory ID</th>
+      <td id="fcategorylist">Small Items/ID</td>
+      <td id="fdatelist">10/28/2018</td>
+      <td id="fdescriptionlist"><img src="emorycard.jpg" width="150px"></td>
+      <td id="userlist">
+        <center><button type="button" class="btn btn-link" data-toggle="modal" data-target="#MessageBuyer">Message User</button></td></center>
+<!--Modal Starts Here-->
+<div class="modal" id="MessageBuyer" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="messagesubject">Message DOOLEY5</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          <form>
+            <div class="form-group">
+              <label>Confirm Your Student ID</label>
+              <input type="ID" class="form-control" id="CSID" placeholder="#000000">
+            </div>
+             <div class="form-group">
+              <label for="exampleSubject">Subject</label>
+              <input type="subject" class="form-control" id="exampleInputSubject1" placeholder="#001 Lost Emory ID">
+            </div>
+            <div class="form-group">
+              <label for="exampleText">Enter your message here.</label>
+              <input type="text" class="form-control" id="exampleInputText" placeholder="Text">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I confirm that this is my lost item; should I choose to claim what is not mine, I understand the situation may be escalated.</label>
+            </div>
+        </form></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--Modal Ends Here-->
+      <td id="flocationlist">Cox Bridge</td>
+    </tr>
+    <tr>
+      <th scope="row" id="flisting">Fleece jacket</th>
+      <td id="fcategorylist">Clothing/Jackets</td>      
+      <td id="fdatelist">10/19/2018</td>
+      <td id="fdescriptionlist">Dark blue fleece jacket, extra-small 32Degrees Heat brand</td>
+      <td id="userlist"><center><button type="button" class="btn btn-link">Message User</button></td></center></td>
+      <td id="flocationlist">DUC-Ling</td>
+    </tr>
+    <tr>
+      <th scope="row" id="flisting">Snowman Earrings</th>
+      <td id="fcategorylist">List/list</td>
+      <td id="fdatelist">10/20/2018</td>
+      <td id="fdescriptionlist"><img src="snowmanearring.png" height="150px"></td>
+      <td id="userlist"><center><button type="button" class="btn btn-link">Message User</button></td></center></td>
+      <td id="flocationlist">Bowden Hall 110</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+
+</div>
+</body>

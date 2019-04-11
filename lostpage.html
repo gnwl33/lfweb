@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hackathon</title>
+  <meta name="description" content="test"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="facss.css">
+  <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+  <!-- amCharts javascript sources -->
+  <script type="text/javascript" src="jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+  <!-- my javascript code -->
+<body>
+<div id="main">
+<header>
+  <!--header-->
+  
+  <div class="header"><img src="logofa.png" alt="logo" id="logo" height="130" width="130" style="float: left;" />
+  <h2 id="mymenu"><font color="#8fa879">FOUND</font><b><font color="#f49681">AROUND</font></b></h2></div>
+
+  <div class="navmenu" id="nav">
+    <h3 style="float: right;"><button type="button" class="btn btn-light" id="Home" onclick="location.href='index.main.html';">HOME</h3></button>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="Login" onclick="location.href='logintest.html';">SIGNUP/LOGIN</button></h3>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="LostItems1" onclick="location.href='lostpage.html';">FIND LOST ITEMS</button></h3>
+    <h3 style="float:right;"><button type="button" class="btn btn-light" id="FoundItems1" onclick="location.href='foundpage.html';">FIND FOUND ITEMS</button></h3>
+  </div>
+
+</header>
+<!--Search form -->
+<form class="form-inline" id="searchlost">
+  <i class="fa fa-search" aria-hidden="true"></i>
+  <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+</form>
+<div class="container">
+<button type="button" class="btn btn-secondary btn-lg btn-block" id="reportlost" data-toggle="modal" data-target="#reportlostmodal">REPORT LOST ITEM</button>
+<!-- Modal -->
+<div class="modal fade" id="reportlostmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ReportFoundTitle">Report a Lost Item</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form id="reportfoundform">
+            <div class="form-group">
+              <label for="InputLostItem">Lost Item</label>
+                <input type="lostitem" class="form-control" id="InputLostItem" aria-describedby="lostitemHelp" placeholder="Enter Item Name">
+            </div>
+            <div class="form-group">
+              <label>Category</label>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="Category1Button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Category
+                </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Small Items</a></li>
+                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+                    <li><a class="dropdown-item" href="#">Clothing</a></li>
+                    <li><a class="dropdown-item" href="#">Other</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="InputDateFound">Date Found</label>
+              <input type="datefound" class="form-control" id="InputDateFound" placeholder="MM/DD/YY">
+            </div>
+           <div class="form-group">
+            <label for="InputDescription">Description</label>
+            <input type="description1" class="form-control" id="InputDes" placeholder="ie. Silver Macbook Air 2014">
+          </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<table class="table table-bordered" id="lostcategory">
+  <thead>
+    <tr>
+      <th scope="col" id="lostitem">Lost Item</th>
+      <th scope="col" id="category">Category</th>
+      <th scope="col" id="lostdate">Lost Date</th>
+      <th scope="col" id="description">Description</th>
+      <th scope="col" id="lastlocation">Last Seen At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" id="listing">Wallet</th>
+      <td id="categorylist">Small Items/Wallet</td>
+      <td id="datelist">08/24/2018</td>
+      <td id="descriptionlist"><img src="smallwallet.jpg" width="150px"></td>
+      <td id="locationlist">Burlington Road Building 209</td>
+    </tr>
+    <tr>
+      <th scope="row" id="listing">Small keys</th>
+      <td id="categorylist">Small Items/Keys</td>      
+      <td id="datelist">10/22/2018</td>
+      <td id="descriptionlist">A small keychain with 3 keys</td>
+      <td id="locationlist">White Hall 109</td>
+    </tr>
+    <tr>
+      <th scope="row" id="listing">2018 iPad Pro</th>
+      <td id="categorylist">Electronics/Apple</td>
+      <td id="datelist">10/23/2018</td>
+      <td id="descriptionlist">Rose gold ipad pro</td>
+      <td id="locationlist">at Hopkins Hall Roof (In Complex) </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+</div>
+</body>

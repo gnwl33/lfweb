@@ -1,0 +1,380 @@
+.header {
+
+}
+
+#logo {
+	margin-top: -25px;
+}
+
+.container1 {
+	position: relative;
+	text-align: center;
+	color: white;
+	margin: 20px;
+	margin-top: 100px;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+	font-family: 'Josefin Slab', serif;
+}
+
+.bottom-left {
+	position: absolute;
+	bottom: 10px;
+	left: 180px;
+	border: 3px solid black;
+	margin: 5px;
+	background-color: #ffffff;
+	opacity: .5;
+}
+
+.bottom-right {
+	position: absolute;
+	bottom: 10px;
+	right: 180px;
+	border: 3px solid black;
+	margin: 5px;
+	background-color: #ffffff;
+	opacity: .5;
+}
+
+.navmenu {
+	height:50px;
+	width: 100%;
+	border-bottom: 2px solid;
+	margin-bottom: -40px;
+	background-color: #a39799;
+	background-opacity: .5;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+
+ }
+
+
+#main {
+	border: 3px solid;
+	background-color: #E8DACF;
+	margin: 10px;
+}
+
+#nav {
+	border-top: 2px solid;
+	padding-top: 2px;
+}
+
+#mymenu {
+	font-size: 55px;
+	font-family: 'Josefin Sans', sans-serif;
+	padding-top: 25px;
+	padding-right: 50px;
+	margin-top: 20px;
+}
+
+#Home {
+
+	margin-top: -25px;
+	margin-right: 5px;
+}
+
+#Login {
+	margin-top: -25px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#LostItems1 {
+	margin-top: -25px;
+}
+
+#FoundItems1 {
+	margin-top: -25px;
+	margin-right: 5px;
+}
+
+#landingtable {
+	margin-top: 2px;
+	margin-right: 20px;
+	border: 3px solid;
+	border-collapse: collapse;
+
+}
+
+#Lost {
+	border: 3px solid;
+	font-family: 'Josefin Slab', serif;
+	font-size: 40px;
+
+
+}
+
+#Found {
+	border: 3px solid;
+	font-family: 'Josefin Slab', serif;
+	font-size: 40px;
+}
+
+#LostPage {
+	color: #000000;
+	font-family: 'Josefin Slab', serif;
+	font-size: 40px;
+}
+
+#FoundPage {
+	color: #000000;
+	font-family: 'Josefin Slab', serif;
+	font-size: 40px;
+
+}
+
+#signupform {
+	border: 2px solid black;
+	padding: 15px;
+	margin: 10px;
+	color: #000000;
+}
+.loginhelp{
+	text-align: center;
+	margin-top: 70px;
+	font-family: 'Josefin Slab', serif;
+	font-size: 25px;
+}
+
+
+#signupalert {
+	margin-top:10px;
+}
+
+#reportlost {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding-left: 2px;
+	font-family: 'Josefin Slab', serif;
+	font-size: 30px;
+	background-color: #C0C0C0;
+
+}
+
+#lostcategory {
+	border: 3px solid black;
+	border-collapse: collapse;
+	color: black;
+}
+
+#userfound{
+	color: black;
+
+}
+
+#lostdate {
+	color: black;
+	border-right: 3px solid black;
+}
+
+#lostitem {
+	color: black;
+	border-right: 3px solid black;
+}
+
+#category {
+	color:black;
+	border-right: 3px solid black;
+}
+
+#userfound {
+	color:black;
+	border-right: 3px solid black;
+}
+
+#description {
+	color:black;
+	border-right: 3px solid black;
+}
+
+#listing {
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+#categorylist {
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+#datelist {
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+#descriptionlist {
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+#userlist {
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+	color: black;	
+}
+
+#locationlist {
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+#LostModal {
+	color: black;
+	background-color: black;
+}
+
+#reportlostform {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding-left: 2px;
+	font-family: 'Josefin Slab', serif;
+	font-size: 30px;
+	background-color: #C0C0C0;
+} 
+
+#Category1Button {
+	background-color: #ffffff;
+	border: 2px solid #CCCCCC;
+}
+
+#submitlost {
+	margin-bottom: 10px;
+}
+
+#foundcategory {
+	border: 3px solid black;
+}
+
+#founditem {
+	color: black;
+	border-right: 3px solid black;
+}
+
+#fcategory {
+	color: black;
+	border-right: 3px solid black;
+}
+
+#founddate {
+	color: black;
+	border-right: 3px solid black;
+}
+
+#fdescription {
+	color: black;
+	border-right: 3px solid black;
+}
+
+#foundlocation {
+	color:black;
+}
+#flisting {
+	color: black;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+#fcategorylist {
+	color: black;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+#fdatelist {
+	color: black;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+#fdescriptionlist {
+	color: black;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
+}
+
+#flocationlist {
+	color: black;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-right: 3px solid black;	
+}
+
+#login1 {
+	margin-top: -10px;
+}
+
+#reportfoundmodal {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding-left: 2px;
+	font-family: 'Josefin Slab', serif;
+	font-size: 30px;
+	background-color: #C0C0C0;
+
+}
+
+#ReportFoundTitle {
+	font-family: 'Josefin Slab', serif;
+	font-size:29px;
+}
+
+#InputFoundItem {
+	padding-right: -50px;
+}
+
+#reportfoundform {
+	float: left;
+}
+
+#searchlost {
+	margin-left: 10px;
+}
+#searchfound {
+	margin-left: 10px;
+}
+
+#messagesubject {
+	font-family: 'Josefin Slab', serif;
+	font-size:29px;
+}
+
+#exampleLogIn {
+	font-family: 'Josefin Slab', serif;
+	font-size:29px;
+}
+
+#loginbutton {
+	margin-top: -20px;
+	font-family: 'Josefin Slab', serif;
+	font-size: 25px;
+}
+/*#LostItem {
+	margin-top: 5px;
+
+}
+
+#FoundItem {
+	margin-top: 5px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hackathon</title>
+  <meta name="description" content="test"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="facss.css">
+  <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+  <!-- amCharts javascript sources -->
+  <script type="text/javascript" src="jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+  <!-- my javascript code -->
+<body>
+<div id="main">
+<header>
+  <!--header-->
+  
+  <div class="header"><img src="logofa.png" alt="logo" height="100" width="100" style="float: left;" />
+  <h2 id="mymenu"><font color="#8fa879">FOUND</font><b><font color="#f49681">AROUND</font></b></h2></div>
+
+  <div class="navmenu" id="nav">
+    <h3 id="home" style="float: right;"><button type="button" class="btn btn-light" id="Home" onclick="location.href='index.main.html';">HOME</h3></button>
+    <h3 id="login" style="float:right;"><button type="button" class="btn btn-light" id="Login" onclick="location.href='logintest.html';">SIGNUP/LOGIN</button></h3>
+  </div>
+
+</header>
+
+
+<!--
+<div class="alert alert-success alert-dismissible fade show" id="signupalert" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
+  <h4 class="alert-heading">Well done!</h4>
+  <p>Thank you for registering. Please check your email for further instructions on how to activate your account.</p>
+  <hr>
+</div><-->
+ 
+
+
+<div class="container">
+<form id="reportlostform">
+  <div class="form-group">
+    <label for="InputLostItem">Lost Item</label>
+    <input type="lostitem" class="form-control" id="InputLostItem" aria-describedby="lostHelp" placeholder="Enter Item Name">
+</div>
+<div class="form-group">
+    <label>Category</label>
+  <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="Category1Button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Category
+  </button>
+   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+</ul>
+</div>
+</div>
+  <div class="form-group">
+    <label for="InputDateFound">Date Found</label>
+    <input type="datefound" class="form-control" id="InputDateFound" placeholder="MM/DD/YY">
+  </div>
+   <div class="form-group">
+    <label for="InputDescription">Description</label>
+    <input type="description1" class="form-control" id="InputDes" placeholder="Enter something short to help identify the item -- ie. Silver Macbook Air 2014">
+  </div>
+  <button type="submit" class="btn btn-primary" id="submitlost" data-toggle="">Submit</button>
+</form>
+</div>
+
+</div>
+</body>
